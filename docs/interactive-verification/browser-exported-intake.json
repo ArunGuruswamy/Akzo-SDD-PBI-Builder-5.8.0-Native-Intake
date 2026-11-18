@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "title": "Validate a synthetic measurement - corrected",
+  "number": "BROWSER-LIVE-1",
+  "project": "Interactive Acceptance Fixture",
+  "application": "dab",
+  "references": [],
+  "legacy": {
+    "key": "cdms",
+    "name": "CDMS",
+    "path": "CDMS"
+  },
+  "analysisMode": "deep",
+  "repositories": [
+    {
+      "key": "legacy",
+      "use": "reference",
+      "area": "Custom (Legacy CRM/XRM)",
+      "path": "Legacy"
+    },
+    {
+      "key": "cdms",
+      "use": "reference",
+      "area": "CDMS",
+      "path": "CDMS"
+    },
+    {
+      "key": "dab",
+      "use": "implement",
+      "area": "DAB (GraphQL)",
+      "path": "DAB"
+    },
+    {
+      "key": "ui",
+      "use": "implement",
+      "area": "Shared Angular UI",
+      "path": "UI"
+    }
+  ],
+  "analysisPlan": {
+    "passes": [
+      {
+        "key": "legacy",
+        "scope": "Trace the existing behavior (controllers, plugins, workflows, JavaScript, persistence); identify what the modern application already handles and what is missing."
+      },
+      {
+        "key": "ui",
+        "scope": "Build one reusable UI execution-flow map (components, services, calls, request and response shapes). Do not scan it again per backend.",
+        "once": true
+      },
+      {
+        "key": "cdms",
+        "scope": "Read-only reference: inspect only API URLs, configuration, request and response contracts, authorization, behavior differences for the UI flow, then the backend implementation of each rule.",
+        "backendChecks": [
+          "API URLs",
+          "configuration",
+          "request and response contracts",
+          "authorization",
+          "behavior differences"
+        ]
+      },
+      {
+        "key": "dab",
+        "scope": "Implementation: inspect only API URLs, configuration, request and response contracts, authorization, behavior differences for the UI flow, then the backend implementation of each rule.",
+        "backendChecks": [
+          "API URLs",
+          "configuration",
+          "request and response contracts",
+          "authorization",
+          "behavior differences"
+        ]
+      }
+    ],
+    "ui": {
+      "shared": true,
+      "verified": false,
+      "identities": null,
+      "reason": "Sharing is assumed (one configured Angular UI). Verify the source identity or integration once, then reuse the map."
+    },
+    "skipped": []
+  },
+  "description": "Reject negative synthetic measurements with a clear message.",
+  "changeType": "unsure",
+  "notes": "",
+  "scope": "",
+  "acceptanceCriteriaMode": "draft",
+  "acceptanceCriteria": "",
+  "attachments": [
+    {
+      "name": "Rule.cs",
+      "path": "playbook/pbis/pbi-BROWSER-LIVE-1-validate-a-synthetic-measurement-corrected-20261110031402343-49be5af2/attachments/Rule.cs"
+    }
+  ],
+  "businessReason": "",
+  "businessExample": "",
+  "businessUnit": "",
+  "redactions": [],
+  "contentWarnings": [],
+  "unscannedAttachments": [],
+  "createdAt": "2026-11-10T03:14:02.348Z",
+  "wizard": {
+    "step": "analysis",
+    "status": "ready-for-analysis"
+  },
+  "status": "Intake — AI refinement not started"
+}

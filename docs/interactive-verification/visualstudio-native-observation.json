@@ -1,0 +1,11 @@
+﻿{
+    "host":  "Visual Studio 2026",
+    "productVersion":  "18.10.12224.181",
+    "builderVersion":  "5.7.0 isolated fixture",
+    "startupCommand":  "Start PBI",
+    "observedIntakeSummaries":  [
+                                    "Intake captured: VS-LIVE-1 — “Validate a synthetic measurement.” The requirement is to reject negative synthetic measurements with a clear message; acceptance criteria are not yet available. No existing PBI folder was returned by workspace search. Next, select the source repository to inspect.",
+                                    "Intake summary: VS-LIVE-1, “Validate a synthetic measurement.”  \n- Requirement: reject negative synthetic measurements with a clear message.  \n- Source: Legacy ColorDMS (`Legacy`).  \n- Development targets: DAB and Shared Angular UI; CDMS excluded.  \n- Acceptance criteria: not available yet; proposed criteria will be drafted during analysis.  \n- Attachments: none.\n\nNext: confirm the intake action."
+                                ],
+    "captureMethod":  "Windows UI Automation, synthetic InteractiveAcceptance solution only"
+}

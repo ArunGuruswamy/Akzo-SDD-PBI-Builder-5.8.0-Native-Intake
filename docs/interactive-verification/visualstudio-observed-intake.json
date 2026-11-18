@@ -1,0 +1,11 @@
+{
+  "pbiNumber": "VS-LIVE-1",
+  "title": "Validate a synthetic measurement",
+  "description": "Reject negative synthetic measurements with a clear message.",
+  "acceptanceCriteria": "Not available yet.",
+  "source": "legacy",
+  "developmentTargets": ["dab", "ui"],
+  "attachments": [],
+  "wizardStage": "Source Analysis",
+  "status": "Needs Evidence"
+}

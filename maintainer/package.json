@@ -1,0 +1,15 @@
+{
+  "name": "akzo-sdd-pbi-builder-maintainer",
+  "version": "5.8.0",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test:intake-contract-lock": "node --test test-intake-contract-lock.cjs",
+    "test:release": "node --test test-intake-contract-lock.cjs test-interactive.cjs test-modules.cjs test-core.cjs test-ui.cjs test-570.cjs test-phase05-planning.cjs test-e2e.cjs"
+  },
+  "devDependencies": {
+    "graphql": "16.11.0"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "investigation": "Selected AN.ColorDMS.Customizations VS Code agent",
+  "hostVersion": "1.145.2",
+  "startupCommand": "Start PBI (user-reported); generated slash prompt is /akzo-pbi-new",
+  "registeredAgent": ".github/agents/akzo-sdd-pbi-builder-vscode.agent.md",
+  "registeredName": "Akzo SDD PBI Builder - AN.ColorDMS.Customizations (VS Code)",
+  "questionToolPermittedByInstalledAgent": "vscode/askQuestions",
+  "installedPackageVersion": "5.7.0",
+  "developmentPackageVersion": "5.7.0",
+  "comparisons": [
+    {
+      "file": ".github/agents/akzo-sdd-pbi-builder-vscode.agent.md",
+      "installedSha256": "3698c154ec54e996319b0e07cf61764cb632503236a94e963153f8f801f70ff7",
+      "developmentSha256": "08671510181b5c0aa015e9b2400f78a4369aa7b45a0e748adade7a0a71558574",
+      "matchesInstalledOwnershipManifest": true,
+      "matchesDevelopment": false
+    },
+    {
+      "file": "playbook/pbi-builder/skills/stage-intake.md",
+      "installedSha256": "13594d55ef326a877b6edda30bcc601eec7b1da0d2b056b5ee4cfa025a11bad9",
+      "developmentSha256": "0e8377636b1afd9931c9889f98c529e5801e8a6adf413258b9d2874407d929d0",
+      "matchesInstalledOwnershipManifest": true,
+      "matchesDevelopment": false
+    },
+    {
+      "file": ".github/prompts/akzo-pbi-new.prompt.md",
+      "installedSha256": "fec533dcfd5c2ed36bd2727b1c142751d9d2001ececd898b70d29a2df6fb7667",
+      "developmentSha256": "61aab72f37f4695455a21ea2227db73ce39b436db0adc2b220099865f690b91a",
+      "matchesInstalledOwnershipManifest": true,
+      "matchesDevelopment": false
+    }
+  ],
+  "actualExecutableMechanism": {
+    "hostAsset": "out/vs/workbench/workbench.desktop.main.js",
+    "registeredToolId": "vscode_askQuestions",
+    "toolReferenceName": "askQuestions",
+    "supportedLegacyReference": "vscode/askQuestions",
+    "renderer": "question carousel",
+    "text": "No options supplied",
+    "singleSelect": "Options supplied; multiSelect false",
+    "multiSelect": "Options supplied; multiSelect true",
+    "freeformDefault": true,
+    "resultFields": ["selected", "freeText", "skipped"],
+    "autoResponseConditions": ["autopilot permission level", "chat.autoReply enabled"],
+    "actualUserSessionAutoResponseSetting": "NOT VERIFIED"
+  },
+  "followupLiveTest": {
+    "status": "LIVE UI NOT VERIFIED",
+    "workspace": "Existing isolated Interactive Acceptance Fixture, not application repository",
+    "actualRegisteredFixtureAgentSelected": true,
+    "startRequestActuallySubmitted": false,
+    "blocker": "Foreground activation failed safety verification. Native ValuePattern.SetValue did not retain the chat request; Send remained disabled. No foreground keyboard input was attempted.",
+    "hostLogsAvailable": false,
+    "popupSourceTargetsCancelStateResults": "NOT VERIFIED"
+  },
+  "applicationRepositoriesModified": false,
+  "productionInstallationModified": false,
+  "releaseOrGlobalInstallationPerformed": false
+}

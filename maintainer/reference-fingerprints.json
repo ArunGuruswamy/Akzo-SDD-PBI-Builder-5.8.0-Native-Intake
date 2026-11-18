@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "files": {
+    "cdms/fk-relationships.csv": "c9750bd2c9d9ee85b570a858e135ce9dcb4f4ba71a3eead07cc80bd0928803ca",
+    "cdms/primary-keys.csv": "e60cc39ec0adaed05e81410f41e34d9c8c06881c50c00e010bc17a760722229c",
+    "cdms/sql-schema-tables.csv": "fce1b031704d555b23b398f99256308f6f906fc083692876b59cbba5aa6ef8c4",
+    "graphql/formula-schema.graphql": "203ad9645c25b47ab91eab530b6bf6658f8a0a2d84726eba98fc9a0ef1ba9713",
+    "graphql/marketcolor.graphql": "e56c6a84d913b4b508f0f53727f211087e6c4b7b7a2716ad91c6d4589dc7eb33",
+    "graphql/product-schema.graphql": "030dcb28235ac20f017a51395004bd82c25907b886c7e8bb9ceda089b0f168cd"
+  }
+}

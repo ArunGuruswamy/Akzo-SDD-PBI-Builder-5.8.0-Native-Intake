@@ -1,0 +1,29 @@
+{
+  "id": "AKZO-PBI-CREATE-INTAKE",
+  "schemaVersion": 1,
+  "stages": [
+    { "id": "PBI_NUMBER", "question": "Enter PBI number or choose Not assigned yet.", "required": true, "allowNotAssigned": true },
+    { "id": "TITLE", "question": "What is the PBI title?", "required": true },
+    { "id": "DESCRIPTION", "question": "What is the PBI description?", "required": true },
+    { "id": "ACCEPTANCE_CRITERIA", "question": "What are the acceptance criteria?", "required": true },
+    { "id": "ATTACHMENTS", "question": "Add attachments or choose Skip.", "required": true, "allowSkip": true },
+    { "id": "REVIEW", "question": "Review all fields. Confirm and start analysis, edit a field, or cancel.", "approval": true, "options": ["Confirm and start analysis", "Edit:PBI_NUMBER", "Edit:TITLE", "Edit:DESCRIPTION", "Edit:ACCEPTANCE_CRITERIA", "Edit:ATTACHMENTS", "Cancel"] },
+    { "id": "CONFIRMED", "question": "", "terminal": true }
+  ],
+  "answers": ["pbiNumber", "title", "description", "acceptanceCriteria", "attachments"],
+  "outcomes": ["SUPPORTED", "UNAVAILABLE", "USER_UNAVAILABLE", "CANCELLED", "EMPTY_RESPONSE", "VALID_RESPONSE", "ERROR"],
+  "waitingState": "WAITING_FOR_USER_INPUT",
+  "confirmation": "Confirm and start analysis",
+  "policy": {
+    "onePendingQuestion": true,
+    "autoRetryUnavailableQuestion": false,
+    "unavailableRequiresExplicitContinuation": true,
+    "captureLabeledFieldsTogether": true,
+    "repeatCompletedQuestions": false,
+    "analysisBeforeConfirmation": false,
+    "scanPbisBeforeConfirmation": false,
+    "editRequiresExplicitRequest": true,
+    "draftSessionIdentity": true,
+    "schemaVersioned": true
+  }
+}
